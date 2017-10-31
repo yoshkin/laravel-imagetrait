@@ -9,6 +9,23 @@ namespace App\Traits;
 
 trait ImageTrait
 {
+    /**
+     * Handle image file upload and DB storage for a image file:
+     * - on CREATE
+     *     - stores the image file at the destination path
+     *     - generates a name
+     *     - stores the path in the DB;
+     * - on UPDATE
+     *     - if the value is null, deletes the image file and sets null in the DB
+     *     - if the value is different, stores the different image file and updates DB value.
+     *
+     * @param  [type] $value            Value for that column sent from the input.
+     * @param  [type] $attribute_name   Model attribute name (and column in the db).
+     * @param  [type] $disk             Filesystem disk used to store files.
+     * @param  [type] $destination_path Path in disk where to store the files.
+     * @param  [type] $width            Width of the image.
+     * @param  [type] $height           Height of the image.
+     */
     public function uploadImageToDisk($value, $attribute_name, $disk, $destination_path, $width = 270, $height = 270)
     {
         // if a new image file is uploaded, delete the file from the disk
