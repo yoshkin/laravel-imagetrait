@@ -3,6 +3,10 @@
 
 ImageTrait for Laravel 5.4
 
+## Requirements
+* laravel 5.4^
+(Because trait uses Storage and Image class of laravel package)
+
 ## Features
 Handle image file upload and DB storage for a image file:
 - on CREATE:
@@ -66,6 +70,9 @@ class Product extends Model {
     }
 }
 ```
+
+##Licence
+MIT
 
 
 
