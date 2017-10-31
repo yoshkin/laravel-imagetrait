@@ -9,12 +9,11 @@
             "email": "alexey.yashenkov@gmail.com"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "require": {
     },
     "autoload": {
         "psr-4": {
-            "App\\": "app/",
             "Yashenkov\\ImageTrait\\": "src/"
         }
     }

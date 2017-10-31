@@ -5,7 +5,7 @@
  * Date: 20.10.17
  * Time: 8:53
  */
-namespace App\Traits;
+namespace Yashenkov\ImageTrait\Traits;
 
 trait ImageTrait
 {
