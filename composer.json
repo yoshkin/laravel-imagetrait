@@ -1,0 +1,21 @@
+{
+    "name": "yashenkov/laravel-imagetrait",
+    "description": "ImageTrait for laravel. Upload/Delete image and thumb image, store path in DB",
+    "type": "package",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aleksey Y.",
+            "email": "alexey.yashenkov@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Yashenkov\\ImageTrait\\": "src/"
+        }
+    }
+}
